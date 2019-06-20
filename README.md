@@ -1,7 +1,7 @@
 ### BizTalk Orchestration Profiler v2.0
 This project is a tool to profile your BizTalk orchestration, it is based on an old powerful tool with the same name that wasn't working anymore since BizTalk 2009.
 
-![](Docs/Home_screen.png)
+![](Docs/Home_Screen.png)
 
 **Enhancements :**
 

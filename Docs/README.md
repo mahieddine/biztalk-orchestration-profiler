@@ -1,4 +1,4 @@
-**Project Description**
+### Project Description
 
 Creates CHM report files illustrating the level of coverage for specified BizTalk orchestrations. This tool can be run to gain a consolidated view of orchestration tracking data for a specified period of time to help developers get an idea of how their orchestrations are being processed and how much coverage they are getting in their testing. In addition to simple coverage information the data presented helps to identify latency and code path exceptions by highlighting long running and error prone orchestration shapes which is key to effective performance testing.
 
