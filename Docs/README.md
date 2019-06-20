@@ -5,12 +5,12 @@ Creates CHM report files illustrating the level of coverage for specified BizTal
 ### Quick Usage guide
 
 The image below shows the home screen of the app, after you ensured that your connexion informations are correct you can using it right away, in order to generate a report : 
- 
-1 - +Click on "List the applications deployed" button, this will retrieve all the BizTalk applications deployed on your BizTalk platform 
-2 - Then select the applications you are interrested by (i.e the apps containing the orchestration(s) you want to profile)
-3 - +Click on the "Get Selected Apps' Orchestrations" button
-4 - Then check the orchestrations you want to generate a report for 
-5 - Select either a date interval or specify exactly the orchestration instances you want to profile (instanceId1, instanceId2...)
+  
+- +Click on "List the applications deployed" button, this will retrieve all the BizTalk applications deployed on your  BizTalk platform   
+- Then select the applications you are interrested by (i.e the apps containing the orchestration(s) you want to profile)  
+- +Click on the "Get Selected Apps' Orchestrations" button  
+- Then check the orchestrations you want to generate a report for   
+- Select either a date interval or specify exactly the orchestration instances you want to profile (instanceId1, instanceId2...)
 
 And finally click on the generate report button
 
