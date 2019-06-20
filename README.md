@@ -12,7 +12,7 @@ Check the [docs section](https://github.com/mahieddine/biztalk-orchestration-pro
 
 ![](Docs/Home_Screen.png)
 
-**Contributions:**
+**Contributions:**  
 We love contributions! There's lots to do, so why not chat with us about what you're interested in doing? Please star/follow the project and let us know about your plans.
 
 Documentation, bug reports, pull requests, and all other contributions are welcome!
