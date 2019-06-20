@@ -1,0 +1,38 @@
+﻿<HTML>
+	<HEAD>
+		<TITLE></TITLE>
+		<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="CommentReport.css" type="text/css" rel="stylesheet">
+	</HEAD>
+	<BODY>
+		<SPAN CLASS="StartOfFile">BizTalk 
+2016 Orchestration Coverage Report</SPAN>
+		<BR>
+		<table>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td CLASS="TableData">
+					<BR>
+					<BR>
+					<span class="TableTitle">Report Guide</span><br><br>
+					<SPAN>
+						This reports gives a consolidated view of orchestration tracking data for 
+						a specified period of time to help developers get an idea of how their 
+						orchestrations are being processed and how much coverage they are getting in 
+						their testing.  Orchestration shapes are color coded according to their coverage levels.</SPAN><BR>
+					
+					<UL>
+						<li>Red shapes have never been hit.</li>
+						<li>Green Shapes have been hit and exited.  Every time they have been hit they have completed successfully.</li>
+						<li>Blue shapes have been hit but have only been exited a set number of times.  E.g. the shape may have been entered, called a custom component and thrown an exception on pass 1, but completed successfully on pass2  - making the overall success rate 50%.</li>					
+					</UL>
+					
+					<BR>
+					<BR>
+					<span class="TableTitle">Example output:</span><br>
+					<IMG SRC="sample.jpg"><BR>
+				</td>
+			</tr>
+		</table>
+	</BODY>
+</HTML>

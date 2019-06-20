@@ -1,0 +1,22 @@
+
+SELECT TOP 50
+	sie.txtErrorInfo
+ FROM 
+	dta_serviceInstances si
+ WITH (READPAST) 
+
+ INNER JOIN dta_services s ON 
+	 s.uidServiceId = si.uidServiceId 
+
+ INNER JOIN dta_ServiceInstanceExceptions sie ON
+	 sie.uidServiceInstanceId = si.uidServiceInstanceId
+ 
+ WHERE 
+	 s.strAssemblyName = '$ParentAssemblyFormattedName$' 
+	 AND s.strServiceName = '$Name$' 
+	 AND (
+			($countInstanceIds$=0 AND si.dtStartTime between '$dateFrom$' AND '$dateTo$')
+			OR ($countInstanceIds$>0 AND si.uidServiceInstanceId IN ($instanceID$))
+		 )
+
+ ORDER BY si.dtStartTime

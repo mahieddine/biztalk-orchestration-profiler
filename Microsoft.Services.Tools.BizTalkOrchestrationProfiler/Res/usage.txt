@@ -1,0 +1,38 @@
+
+Usage: 
+	BizTalkOrchestrationProfiler.exe [options]
+	
+	Options:
+	
+		/o[utputdir]         The output directory for the report. Default %TEMP%.
+		
+		/ms
+		/managementserver    The BizTalk database server name (incl. instance). Default %COMPUTERNAME%.
+		
+		/md
+		/managementdatabase  The BizTalk management database name to query. Default BizTalkMgmtDb.
+		
+		/ts
+		/trackingserver      The BizTalk database server name (incl. instance). Default %COMPUTERNAME%.
+		
+		/td
+		/trackingdatabase    The BizTalk management database name to query. Default BizTalkDtaDb.
+		
+		/datefrom            The date/time from which the profiling should begin.  Default Now - 1 week.
+		
+		/dateto              The date/time at which the profiling should end. Default Now.
+		
+		/t[itle]             The documentation file name and caption.
+		
+		/s[how]              Show the documentation output when complete.  Default True.
+		
+		/def[aults]          Run the documenter with all the defaults.
+		
+		/h[elp] or /?        This message.
+		
+	Examples:
+		BizTalkOrchestrationProfiler.exe /def
+		
+		BizTalkOrchestrationProfiler.exe /ms:MyServer\INST1 /ts:MyServer\INST2 /t:"My Report Name" /s:False
+		
+		

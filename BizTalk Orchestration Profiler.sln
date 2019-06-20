@@ -1,0 +1,61 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Services.Tools.BizTalkOrchestrationProfiler", "Microsoft.Services.Tools.BizTalkOrchestrationProfiler\Microsoft.Services.Tools.BizTalkOrchestrationProfiler.csproj", "{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Services.Tools.BizTalkOrchestrationProfiler.Core", "Microsoft.Services.Tools.BizTalkOrchestrationProfiler.Core\Microsoft.Services.Tools.BizTalkOrchestrationProfiler.Core.csproj", "{288B8BE1-4A5D-45E4-BAF4-A440423DBA93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Services.Tools.BizTalkOM", "Microsoft.Services.Tools.BizTalkOM\Microsoft.Services.Tools.BizTalkOM.csproj", "{88C5F0A8-851C-4F10-8AB6-67B6B723B837}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferencedAssemblies", "ReferencedAssemblies", "{3C579326-276F-4DDC-8E7C-838D69DCC2F0}"
+	ProjectSection(SolutionItems) = preProject
+		ReferencedAssemblies\Microsoft.BizTalk.ExplorerOM.dll = ReferencedAssemblies\Microsoft.BizTalk.ExplorerOM.dll
+		ReferencedAssemblies\Microsoft.BizTalk.Interop.SSOClient.dll = ReferencedAssemblies\Microsoft.BizTalk.Interop.SSOClient.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}.Debug|Any CPU.Build.0 = Debug|x86
+		{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}.Debug|x86.Build.0 = Debug|Any CPU
+		{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}.Release|Any CPU.ActiveCfg = Release|x86
+		{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}.Release|Any CPU.Build.0 = Release|x86
+		{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}.Release|Mixed Platforms.Build.0 = Release|x86
+		{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}.Release|x86.ActiveCfg = Release|x86
+		{EC1E2F14-6126-426C-8BEB-FEDE5EE092B6}.Release|x86.Build.0 = Release|x86
+		{288B8BE1-4A5D-45E4-BAF4-A440423DBA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288B8BE1-4A5D-45E4-BAF4-A440423DBA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288B8BE1-4A5D-45E4-BAF4-A440423DBA93}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{288B8BE1-4A5D-45E4-BAF4-A440423DBA93}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{288B8BE1-4A5D-45E4-BAF4-A440423DBA93}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{288B8BE1-4A5D-45E4-BAF4-A440423DBA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288B8BE1-4A5D-45E4-BAF4-A440423DBA93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288B8BE1-4A5D-45E4-BAF4-A440423DBA93}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{288B8BE1-4A5D-45E4-BAF4-A440423DBA93}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{288B8BE1-4A5D-45E4-BAF4-A440423DBA93}.Release|x86.ActiveCfg = Release|Any CPU
+		{88C5F0A8-851C-4F10-8AB6-67B6B723B837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88C5F0A8-851C-4F10-8AB6-67B6B723B837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88C5F0A8-851C-4F10-8AB6-67B6B723B837}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{88C5F0A8-851C-4F10-8AB6-67B6B723B837}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{88C5F0A8-851C-4F10-8AB6-67B6B723B837}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{88C5F0A8-851C-4F10-8AB6-67B6B723B837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88C5F0A8-851C-4F10-8AB6-67B6B723B837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88C5F0A8-851C-4F10-8AB6-67B6B723B837}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{88C5F0A8-851C-4F10-8AB6-67B6B723B837}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{88C5F0A8-851C-4F10-8AB6-67B6B723B837}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
