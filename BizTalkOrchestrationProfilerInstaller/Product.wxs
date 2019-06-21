@@ -1,32 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" Name="BizTalk Orchestration Profiler" Language="1033" Version="1.0.0.0" Manufacturer="Microsoft" UpgradeCode="552745d3-4d1f-4b8d-aafd-776762b9cca4">
-		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+  <Product Id="*" Name="BizTalk Orchestration Profiler" Language="1033" Version="1.0.0.0" Manufacturer="Microsoft" UpgradeCode="552745d3-4d1f-4b8d-aafd-776762b9cca4">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
-		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
-		<MediaTemplate  EmbedCab="yes" />
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
 
-		<Feature Id="ProductFeature" Title="BizTalk Orchestration Profiler" Level="1">
-			<ComponentGroupRef Id="ProductComponents" />
-		</Feature>
-	</Product>
+    <Feature Id="ProductFeature" Title="BizTalk Orchestration Profiler" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+    </Feature>
+  </Product>
 
-	<Fragment>
-		<Directory Id="TARGETDIR" Name="SourceDir">
-			<Directory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLFOLDER" Name="BizTalkOrchestrationProfiler" />
-			</Directory>
-		</Directory>
-	</Fragment>
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="BizTalkOrchestrationProfiler" />
+      </Directory>
+      <Directory Id="DesktopFolder" Name="Desktop" />
+    </Directory>
 
-	<Fragment>
-		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
-			<Component>
-				<File Source="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\BizTalkOrchestrationProfiler.exe" KeyPath="yes" Checksum="yes" />
-			</Component>
-			<Component>
-				<File Source="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\Microsoft.BizTalk.ExplorerOM.dll" KeyPath="yes" Checksum="yes" />
-			</Component>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component>
+        <File Source="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\BizTalkOrchestrationProfiler.exe" KeyPath="yes" Checksum="yes">
+          <Shortcut Id="DesktopShortcut"
+                  Directory="DesktopFolder"
+                  Name="BizTalk Orchestration Profiler"
+                  Description="Profile your BizTalk orchestration"
+                  WorkingDirectory="INSTALLFOLDER"
+                  Icon="BizTalkOrchestrationProfiler.exe"
+                  IconIndex="0"
+                  Advertise="yes">
+            <Icon Id="BizTalkOrchestrationProfiler.exe" SourceFile="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\BizTalkOrchestrationProfiler.exe" />
+          </Shortcut>
+        </File>
+      </Component>
+      <Component>
+        <File Source="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\Microsoft.BizTalk.ExplorerOM.dll" KeyPath="yes" Checksum="yes" />
+      </Component>
       <Component>
         <File Source="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\Microsoft.BizTalk.Interop.SSOClient.dll" KeyPath="yes" Checksum="yes" />
       </Component>
@@ -36,6 +49,6 @@
       <Component>
         <File Source="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\Microsoft.Services.Tools.BizTalkOrchestrationProfiler.Core.dll" KeyPath="yes" Checksum="yes" />
       </Component>
-		</ComponentGroup>
-	</Fragment>
+    </ComponentGroup>
+  </Fragment>
 </Wix>
