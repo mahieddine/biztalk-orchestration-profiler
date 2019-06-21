@@ -22,3 +22,6 @@ We love contributions! There's lots to do, so why not chat with us about what yo
 Documentation, bug reports, pull requests, and all other contributions are welcome!
 
 To suggest a feature or report a bug: https://github.com/mahieddine/biztalk-orchestration-profiler/issues
+
+If you want to help me keep this project maintained 🙂
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q5XP49)
