@@ -1,4 +1,9 @@
-os: windows
 language: csharp
-mono: none
-dotnet: 4.5.0
+script:
+  - xbuild /p:Configuration=Debug "BizTalk Orchestration Profiler.sln"
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore "BizTalk Orchestration Profiler.sln"
+after_script:
+  - nunit-console Tests/bin/Debug/Tests.dll
