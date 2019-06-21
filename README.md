@@ -1,4 +1,8 @@
 ### BizTalk Orchestration Profiler v2.0
+
+[![Build Status](https://travis-ci.org/mahieddine/biztalk-orchestration-profiler.svg?branch=master)](https://travis-ci.org/mahieddine/biztalk-orchestration-profiler)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)    
 This project is a tool to profile your BizTalk orchestration, it is based on an old powerful tool with the same name that wasn't working anymore since BizTalk 2009.
 
 **Enhancements :**
