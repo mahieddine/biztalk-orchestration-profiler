@@ -24,7 +24,7 @@
   <Fragment>
     <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
       <Component>
-        <File Source="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\BizTalkOrchestrationProfiler.exe" KeyPath="yes" Checksum="yes">
+        <File Source="..\Microsoft.Services.Tools.BizTalkOrcProfiler.UI\bin\Release\BizTalkOrcProfilerUI.exe" KeyPath="yes" Checksum="yes">
           <Shortcut Id="DesktopShortcut"
                   Directory="DesktopFolder"
                   Name="BizTalk Orchestration Profiler"
@@ -33,21 +33,21 @@
                   Icon="BizTalkOrchestrationProfiler.exe"
                   IconIndex="0"
                   Advertise="yes">
-            <Icon Id="BizTalkOrchestrationProfiler.exe" SourceFile="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\BizTalkOrchestrationProfiler.exe" />
+            <Icon Id="BizTalkOrchestrationProfiler.exe" SourceFile="..\Microsoft.Services.Tools.BizTalkOrcProfiler.UI\bin\Release\BizTalkOrcProfilerUI.exe" />
           </Shortcut>
         </File>
       </Component>
       <Component>
-        <File Source="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\Microsoft.BizTalk.ExplorerOM.dll" KeyPath="yes" Checksum="yes" />
+        <File Source="..\Microsoft.Services.Tools.BizTalkOrcProfiler.UI\bin\Release\Microsoft.BizTalk.ExplorerOM.dll" KeyPath="yes" Checksum="yes" />
       </Component>
       <Component>
-        <File Source="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\Microsoft.BizTalk.Interop.SSOClient.dll" KeyPath="yes" Checksum="yes" />
+        <File Source="..\Microsoft.Services.Tools.BizTalkOrcProfiler.UI\bin\Release\Microsoft.BizTalk.Interop.SSOClient.dll" KeyPath="yes" Checksum="yes" />
       </Component>
       <Component>
-        <File Source="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\Microsoft.Services.Tools.BizTalkOM.dll" KeyPath="yes" Checksum="yes" />
+        <File Source="..\Microsoft.Services.Tools.BizTalkOrcProfiler.UI\bin\Release\Microsoft.Services.Tools.BizTalkOrcProfiler.BizTalkOM.dll" KeyPath="yes" Checksum="yes" />
       </Component>
       <Component>
-        <File Source="..\Microsoft.Services.Tools.BizTalkOrchestrationProfiler\bin\x86\Release\Microsoft.Services.Tools.BizTalkOrchestrationProfiler.Core.dll" KeyPath="yes" Checksum="yes" />
+        <File Source="..\Microsoft.Services.Tools.BizTalkOrcProfiler.UI\bin\Release\Microsoft.Services.Tools.BizTalkOrcProfiler.Core.dll" KeyPath="yes" Checksum="yes" />
       </Component>
     </ComponentGroup>
   </Fragment>
