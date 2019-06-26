@@ -5,7 +5,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)    
 
 ## Goal 
-One of the biggest issues when you are a BizTalk developer is that once you put your code outside of the dev environnement you have no idea how it's behaving (how many times we countered situations when an orchestration is very slow on prod and we can't know exactly easily neither why or which shape(s) is/are taking too much time to execute). This tool is here is to provide an answer to that issue. 
+One of the biggest issue when you are a BizTalk developer is that once you put your code outside of the dev environnement you have no idea how it's behaving (how many times we countered situations when an orchestration is very slow on prod and we can't know exactly easily neither why or which shape(s) is/are taking too much time to execute). This tool is here is to provide an answer to that issue. 
 
 ## History
 This tool is based on an old powerful tool with the same name that wasn't working anymore since BizTalk 2009.
