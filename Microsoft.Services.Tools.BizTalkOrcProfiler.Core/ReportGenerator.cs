@@ -27,7 +27,7 @@ namespace Microsoft.Sdc.OrchestrationProfiler.Core
         private HelpFileWriter hfw;
         string btsOutputDir = Path.GetTempPath();
         string FILE_NAME = "BTS2K4Coverage.chm";
-        private const string resourcePrefix = "Microsoft.Services.Tools.BizTalkOrchestrationProfiler.Core";
+        private const string resourcePrefix = "Microsoft.Services.Tools.BizTalkOrcProfiler.Core";
 
         /// <summary>
         /// Constructor

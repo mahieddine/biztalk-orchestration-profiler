@@ -770,7 +770,7 @@ namespace Microsoft.Services.Tools.BizTalkOM
             {
                 #region SQL
 
-                string resourcePrefix = "Microsoft.Services.Tools.BizTalkOM";
+                string resourcePrefix = "Microsoft.Services.Tools.BizTalkOrcProfiler.BizTalkOM";
                 Assembly a = Assembly.GetExecutingAssembly();
                 StreamReader sqlReader = new StreamReader(a.GetManifestResourceStream(resourcePrefix + ".Res.SqlOrchErrorInfo.txt"));
                 string sqlOrchTrackingMetrics = sqlReader.ReadToEnd();
@@ -844,7 +844,7 @@ namespace Microsoft.Services.Tools.BizTalkOM
         {
             #region SQL
 
-            string resourcePrefix = "Microsoft.Services.Tools.BizTalkOM";
+            string resourcePrefix = "Microsoft.Services.Tools.BizTalkOrcProfiler.BizTalkOM";
             Assembly a = Assembly.GetExecutingAssembly();
             StreamReader sqlReader = new StreamReader(a.GetManifestResourceStream(resourcePrefix + ".Res.SqlOrchTrackingMetrics.txt"));
             string sqlOrchTrackingMetrics = sqlReader.ReadToEnd();
@@ -980,7 +980,7 @@ namespace Microsoft.Services.Tools.BizTalkOM
         {
             #region SQL
 
-            string resourcePrefix = "Microsoft.Services.Tools.BizTalkOM";
+            string resourcePrefix = "Microsoft.Services.Tools.BizTalkOrcProfiler.BizTalkOM";
             Assembly a = Assembly.GetExecutingAssembly();
             StreamReader sqlReader = new StreamReader(a.GetManifestResourceStream(resourcePrefix + ".Res.SqlOrchTrackingShapeMetrics.txt"));
             string sqlOrchTrackingShapeInfo = sqlReader.ReadToEnd();

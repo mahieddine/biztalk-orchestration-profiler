@@ -347,7 +347,7 @@
     <None Include="BizTalkTools.snk" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Res\SQLTimeZone.txt" />
+    <EmbeddedResource Include="Res\SQLTimeZone.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
   <PropertyGroup>

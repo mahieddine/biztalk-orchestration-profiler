@@ -38,6 +38,9 @@
         </File>
       </Component>
       <Component>
+        <File Source="..\Microsoft.Services.Tools.BizTalkOrcProfiler.UI\bin\Release\BizTalkOrcProfilerUI.exe.config" KeyPath="yes" Checksum="yes" />
+      </Component>
+      <Component>
         <File Source="..\Microsoft.Services.Tools.BizTalkOrcProfiler.UI\bin\Release\Microsoft.BizTalk.ExplorerOM.dll" KeyPath="yes" Checksum="yes" />
       </Component>
       <Component>
