@@ -967,6 +967,7 @@ namespace Microsoft.Sdc.Orchestration.Profiler
 			{
 				MessageBox.Show("Error displaying orchestration", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				Debug.WriteLine(ex.Message);
+                File.WriteAllText("CrashReport.dat", ex.ToString());
 			}
 		}
 
