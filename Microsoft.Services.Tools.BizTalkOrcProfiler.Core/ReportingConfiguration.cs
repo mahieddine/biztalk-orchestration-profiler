@@ -21,6 +21,7 @@ namespace Microsoft.Sdc.OrchestrationProfiler.Core
 		public ExecutionMode ExecutionMode = ExecutionMode.CommandLine;
 		public string ReportTitle = string.Empty;
 		public bool ShowOutputOnCompletion = true;
+        public string OrcsList = string.Empty;
 
 		/// <summary>
 		/// 

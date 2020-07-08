@@ -251,6 +251,26 @@ namespace Microsoft.Services.Tools.BizTalkOM
             return names;
         }
 
+        public ArrayList GetSpecificOrchestrationNames(string orcsList)
+        {
+            TraceManager.SmartTrace.TraceIn();
+            ArrayList names = new ArrayList();
+
+            this.InitExplorer(this.server, this.mgmtDatabaseName);
+
+            foreach (BizTalkCore.BtsAssembly asm in this.explorer.Assemblies)
+            {
+                foreach (BizTalk.ExplorerOM.BtsOrchestration orch in asm.Orchestrations)
+                {
+                    if(orcsList.Contains(orch.FullName))
+                        names.Add(string.Format("{0}|{1}", orch.BtsAssembly.DisplayName, orch.FullName));
+                }
+            }
+
+            TraceManager.SmartTrace.TraceOut();
+            return names;
+        }
+
         public Orchestration GetOrchestration(string assemblyName, string orchestrationName)
         {
             Orchestration orch = null;

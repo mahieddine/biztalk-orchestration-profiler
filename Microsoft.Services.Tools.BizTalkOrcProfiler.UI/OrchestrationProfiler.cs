@@ -781,8 +781,12 @@ namespace Microsoft.Sdc.Orchestration.Profiler
 				}
 				else
 				{
-					ai = bizTalkInstallation.GetOrchestrationNames();
-				}
+                    //Is there a specified orcs in Command args?
+                    if (reportingConfiguration.ExecutionMode==ExecutionMode.CommandLine && !string.IsNullOrEmpty(reportingConfiguration.OrcsList))
+                        ai = bizTalkInstallation.GetSpecificOrchestrationNames(reportingConfiguration.OrcsList);
+                    else
+                        ai = bizTalkInstallation.GetOrchestrationNames();
+                }
 
 				foreach (string assemblyOrchestration in ai)
 				{
@@ -834,7 +838,7 @@ namespace Microsoft.Sdc.Orchestration.Profiler
 		{
 			if (reportingConfiguration.ExecutionMode == ExecutionMode.CommandLine)
 			{
-				ListDeployedOrchestrations(this, new LinkLabelLinkClickedEventArgs(null));
+                ListDeployedOrchestrations(this, new LinkLabelLinkClickedEventArgs(null));
 			}
 
 			AssemblyOrchestrationPairCollection coll = new AssemblyOrchestrationPairCollection();
@@ -1043,7 +1047,12 @@ namespace Microsoft.Sdc.Orchestration.Profiler
 						reportingConfiguration.ReportTitle = argValue;
 						break;
 
-					case "/show":
+                    case "/orcslist":
+                    case "/orc":
+                        reportingConfiguration.OrcsList = argValue;
+                        break;
+
+                    case "/show":
 					case "/s":
 						reportingConfiguration.ShowOutputOnCompletion = Convert.ToBoolean(argValue);
 						break;
